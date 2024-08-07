@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unieee!!! Iloveyou</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="images/pressbtn.jpg" class="press-btn" onclick="showMessage()" alt="Press here">
+            <div id="heart" class="heart"></div>
+            <div id="messageCard" class="message-card">
+                <img src="images/birthday_card.jpg" alt="Happy Birthday">
+                <button id="playVideoBtn" class="play-video-btn" onclick="playVideo()">Next🐹</button>
+                <video id="birthdayVideo" class="birthday-video" controls style="display:none;">
+                    <source src="images/birthday_video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button id="thankYouBtn" class="thank-you-btn" onclick="showThankYou()">Next🐰</button>
+                <img id="thankYouImg" src="images/thankyou.jpg" alt="Thank You" class="thank-you-img">
+                <button id="reloadBtn" class="reload-btn" onclick="reloadPage()">😍😍😍</button>
+            </div>
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
