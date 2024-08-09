@@ -44,11 +44,12 @@ html, body {
     display: inline-block;
     height: 50px;
     margin: 0 10px;
-    position: relative;
+    position: relative; 
     top: 0;
     transform: rotate(-45deg);
     position: absolute; 
-    left: 45%; top: 45%;
+    left: 42.5%; top: 50%;
+    transform: translate(-50%, 50%);
     width: 50px;
     animation: heartbeat 3s infinite;
     display: none;
