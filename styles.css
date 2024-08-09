@@ -93,8 +93,8 @@ html, body {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 370px;
-    height: 670px; /* Thay đổi kích thước nếu cần */
+    width: 330px;
+    height: 600px; /* Thay đổi kích thước nếu cần */
     background-color: transparent; /* Không cần nền */
     border: none; /* Loại bỏ viền */
     border-radius: 10px;
@@ -118,7 +118,7 @@ html, body {
     color: white;
     border: none;
     cursor: pointer;
-    padding: 5px 3px;
+    padding: 1px 3px;
     border-radius: 5px;
     display: none;
 }
@@ -142,7 +142,7 @@ html, body {
     color: white;
     border: none;
     cursor: pointer;
-    padding: 5px 20px;
+    padding: 3px 20px;
     border-radius: 5px;
     display: none;
     transform: translateX(50%);
@@ -163,7 +163,7 @@ html, body {
 .reload-btn {
     position: absolute;
     bottom: 25px;
-    right: 139px;
+    right: 120px;
     background-color: #a6a6a6;
     color: white;
     border: 1;
