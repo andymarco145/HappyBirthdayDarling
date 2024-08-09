@@ -9,6 +9,9 @@
 <body>
     <div class="container">
         <div class="card">
+            <div id="heart" class="heart">
+                <img src="images/rotating_image.jpg" alt="Rotating Image" class="rotating-img">
+            </div>
             <img src="images/pressbtn.jpg" class="press-btn" onclick="showMessage()" alt="Press here">
             <div id="heart" class="heart"></div>
             <div id="messageCard" class="message-card">
@@ -16,7 +19,6 @@
                 <button id="playVideoBtn" class="play-video-btn" onclick="playVideo()">Next🐹</button>
                 <video id="birthdayVideo" class="birthday-video" controls style="display:none;">
                     <source src="images/birthday_video1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
                 </video>
                 <button id="thankYouBtn" class="thank-you-btn" onclick="showThankYou()">Next🐰</button>
                 <img id="thankYouImg" src="images/thankyou.jpg" alt="Thank You" class="thank-you-img">
@@ -24,6 +26,13 @@
             </div>
         </div>
     </div>    
+    <audio id="backgroundMusic" loop>
+        <source src="images/background_music.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="newBackgroundMusic" loop>
+        <source src="images/background_music2.mp3" type="audio/mpeg">
+    </audio>
+      
     <script src="script.js"></script>
 </body>
 </html>

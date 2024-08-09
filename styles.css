@@ -52,6 +52,8 @@ html, body {
     width: 50px;
     animation: heartbeat 3s infinite;
     display: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .heart:before,
@@ -72,6 +74,18 @@ html, body {
 .heart:after {
     left: 25px;
     top: 0;
+}
+
+.rotating-img {
+    width: 40px; /* Điều chỉnh kích thước hình ảnh theo ý muốn */
+    height: 40px; /* Điều chỉnh kích thước hình ảnh theo ý muốn */
+    object-fit: cover;
+    border-radius: 50%;
+    animation: rotate 2s linear infinite; /* Hiệu ứng xoay tròn */
+    position: absolute; /* Để định vị chính xác */
+    left: 21%;
+    transform: translate(-50%, -50%); /* Căn giữa hình ảnh */
+    z-index: 2; /* Đặt lớp trên cùng */
 }
 
 .message-card {
@@ -158,17 +172,26 @@ html, body {
     display: none;
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); /* Bắt đầu từ 0 độ */
+    }
+    100% {
+        transform: rotate(360deg); /* Xoay một vòng 360 độ */
+    }
+}
+
 @keyframes heartbeat {
     0% {
       transform: scale(1) rotate(-45deg);   
     }
     20% {
-      transform: scale(1.5)  
+      transform: scale(1.5) rotate(-45deg) 
         translateX(5%) 
         translateY(5%);
     } 
     40% {
-      transform: scale(1.5) rotate(-90deg)
+      transform: scale(1.5) rotate(-45deg)
         translateX(9%) 
         translateY(10%);
     }
