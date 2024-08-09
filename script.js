@@ -2,9 +2,6 @@
 var backgroundMusic = document.getElementById("backgroundMusic");
 var newBackgroundMusic = document.getElementById("newBackgroundMusic");
 
-backgroundMusic.volume = 0.75;
-newBackgroundMusic.volume = 0.75;
-
 function showMessage() {
     var heart = document.getElementById("heart");
     var messageCard = document.getElementById("messageCard");
